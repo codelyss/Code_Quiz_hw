@@ -37,7 +37,8 @@
                             </div>
 
                             <!-- start quiz button -->
-                            <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button" value="start Quiz">
+                            <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
+                                value="start Quiz">
 
                             <!-- break line between the buttons and the high score section  -->
                             <hr class="my-4">
@@ -46,7 +47,7 @@
                             <div class="form-label-group">
                                 <div class="clickCursor">View High Scores</div>
                             </div>
-                         
+
                         </form>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                         <p>
                             <input id="btnAnswer2" class="btn btn-dark" type="button">
                         </p>
-                        
+
                         <!-- quiz option 3 -->
                         <p>
                             <input id="btnAnswer3" class="btn btn-dark" type="button">
@@ -98,20 +99,20 @@
                     <div class="card-body">
                         <div class="form-signin">
 
-                        <h5 id="lblResult" class="card-title">You've completed the quiz!</h5>
-                        <div class="form-label-group">
-                            <h5 id="txtScore">Your Score: </h5>
-                        </div>
-                        <div class="form-label-group">
-                            <input type="text" id="txtUserName" class="form-control" placeholder="Your Name">
-                            <label for="txtUserName">Your Name</label>
-                        </div>
+                            <h5 id="lblResult" class="card-title">You've completed the quiz!</h5>
+                            <div class="form-label-group">
+                                <h5 id="txtScore">Your Score: </h5>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="text" id="txtUserName" class="form-control" placeholder="Your Name">
+                                <label for="txtUserName">Your Name</label>
+                            </div>
 
-                        <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
-                            onclick="SaveScore()" value="Save Score">
+                            <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
+                                onclick="SaveScore()" value="Save Score">
 
-                        <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
-                            onclick="ShowMainContainer()" value="Try Again">
+                            <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
+                                onclick="ShowMainContainer()" value="Try Again">
                         </div>
                     </div>
                 </div>
@@ -119,7 +120,35 @@
         </div>
     </div>
 
- 
+    <!-- high scores page -->
+    <div id="scoresContainer" class="container" style="display: none">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <div class="form-signin">
+
+                            <h5 id="lblHighScores" class="card-title">High Scores</h5>
+                            <div class="form-label-group">
+                                <h5 id="txtHighScores">Scores </h5>
+                            </div>
+
+                            <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
+                                onclick="ShowMainContainer()" value="Back">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- referencing scripts -->
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="html_questions.js"></script>
+    <script type="text/javascript" src="css_questions.js"></script>
+    <script type="text/javascript" src="javascript_questions.js"></script>
+
+
     <!-- audio -->
 
 </body>
