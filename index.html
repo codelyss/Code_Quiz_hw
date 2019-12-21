@@ -15,14 +15,14 @@
 
 <body>
     <!-- landing page -->
-    <div class="container">
+    <div id="mainContainer" class="container" style="display:block">
         <div class="row">
             <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                 <div class="card card-signin my-5">
                     <div class="card-body">
                         <h5 class="card-title text-center">Alyssa's Code Quiz</h5>
                         <form class="form-signin">
-                            <div class="form-label-group">
+                            <div class="dropdown form-label-group">
 
                                 <!-- select quiz button -->
                                 <button type="button" class="btn btn-secondary btn-block dropdown-toggle" id="ddlQuiz"
@@ -41,14 +41,14 @@
 
                             <!-- start quiz button -->
                             <input class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
-                                value="start Quiz">
+                                value="start Quiz" onclick="StartQuiz()">
 
                             <!-- break line between the buttons and the high score section  -->
                             <hr class="my-4">
 
                             <!-- high score button -->
                             <div class="form-label-group">
-                                <div class="clickCursor">View High Scores</div>
+                                <div class="clickCursor" onclick="ShowScores()">View High Scores</div>
                             </div>
 
                         </form>
@@ -66,27 +66,32 @@
                     <div class="card-body">
 
                         <!-- quiz question -->
-                        <h5 id="lblQuestion" class="car-title text-center">Question</h5>
+                        <h5 id="lblQuestion" class="card-title text-center">Question</h5>
 
                         <!-- quiz option 1 -->
                         <p>
-                            <input id="btnAnswer1" class="btn btn-dark" type="button">
+                            <input id="btnAnswer1" class="btn btn-dark" type="button" onclick="AnswerQuestion(value)">
                         </p>
 
                         <!-- quiz option 2 -->
                         <p>
-                            <input id="btnAnswer2" class="btn btn-dark" type="button">
+                            <input id="btnAnswer2" class="btn btn-dark" type="button" onclick="AnswerQuestion(value)">
                         </p>
 
                         <!-- quiz option 3 -->
                         <p>
-                            <input id="btnAnswer3" class="btn btn-dark" type="button">
+                            <input id="btnAnswer3" class="btn btn-dark" type="button" onclick="AnswerQuestion(value)">
                         </p>
 
                         <!-- quiz option 4 -->
                         <p>
-                            <input id="btnAnswer4" class="btn btn-dark" type="button">
+                            <input id="btnAnswer4" class="btn btn-dark" type="button" onclick="AnswerQuestion(value)">
                         </p>
+
+                        <hr class="my-4">
+                        <div class="form-label-group">
+                            <h6 id="timerdisplay"></h6>
+                        </div>
 
                     </div>
                 </div>
@@ -153,6 +158,12 @@
 
 
     <!-- audio -->
+    <audio id="positivesound">
+        <source src="assets/positivesound.wav" type="audio/wav">
+    </audio>
+    <audio id="negativesound">
+        <source src="assets/negativesound.wav" type="audio/wav">
+    </audio>
 
 </body>
 
