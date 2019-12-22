@@ -20,4 +20,4 @@ Timer-based quiz application that stores high scores client-side.
 
 
 ## License: ##
-The two sound files was found on Freesound: [PositiveSound] (https://freesound.org/people/themusicalnomad/sounds/253887/) and [NegativeSound] (https://freesound.org/people/themusicalnomad/sounds/253886/)
+The two sound files were found on Freesound: [PositiveSound](https://freesound.org/people/themusicalnomad/sounds/253887/) and [NegativeSound](https://freesound.org/people/themusicalnomad/sounds/253886/).
